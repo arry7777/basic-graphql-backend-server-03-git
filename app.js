@@ -2,6 +2,8 @@ const express = require('express');
 const cors =require('cors');
 require('dotenv').config();
 
+const homeRoute = require("./router");
+
 const {graphqlHTTP}  =require('express-graphql');
 const schema = require('./Schema/schema.js');
 const mongoose=require('mongoose');
@@ -19,6 +21,8 @@ mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true},{ useUnifiedTopolo
 mongoose.connection.once('open',()=>{
             console.log("live on connection mongodb")
 });
+
+app.use("/", homeRoute);
 
 //setting midleware on graphql endpoint 
 app.use('/graphql',graphqlHTTP({
