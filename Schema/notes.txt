@@ -1,0 +1,4 @@
+notes
+ RootQuery defines how we can get into the data
+
+ resolve function contaians logic to perform to get the query data 
