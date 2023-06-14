@@ -20,7 +20,7 @@ const routehandler = (req, res) => {
               ">
     Hi thanku for visiting... </hr></br>
     This is a graphql api which uses <i>GraphiQL<i/> Tool .</br>
-    for making query requests for Testing... So u need to access </br> <a href=" https://basic-graphql-server-03.herokuapp.com/graphql"> https://basic-graphql-server-03.herokuapp.com/graphql </a>. </br>Route for using graphiql for making queries to the Server</h1>
+    for making query requests for Testing... So u need to access </br> <a href=" https://basic-graphql-app-backend-server.onrender.com/graphql> https://basic-graphql-app-backend-server.onrender.com/graphql </a>. </br>Route for using graphiql for making queries to the Server</h1>
     </div>`
   );
   //next()
